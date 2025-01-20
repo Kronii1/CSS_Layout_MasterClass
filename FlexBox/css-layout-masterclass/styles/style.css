@@ -1,14 +1,18 @@
 .father {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-end;
   gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .box {
   width: 200px;
   height: 200px;
   background-color: tomato;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
