@@ -16,8 +16,10 @@
 
 .box:first-child {
   background-color: tomato;
+  flex-grow: 1;
 }
 
 .box:last-child {
   background-color: teal;
+  flex-grow: 2;
 }
