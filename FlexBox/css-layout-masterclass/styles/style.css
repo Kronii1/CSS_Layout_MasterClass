@@ -4,7 +4,6 @@
   row-gap: 10px;
   column-gap: 20px;
   justify-content: center;
-  flex-flow: row wrap;
   align-items: center;
   align-content: center;
 }
@@ -18,4 +17,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box:first-child {
+  align-self: start;
+}
+
+.box:last-child {
+  align-self: flex-end;
 }
