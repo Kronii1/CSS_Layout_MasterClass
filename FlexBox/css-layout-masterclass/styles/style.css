@@ -15,16 +15,16 @@
 }
 
 .box:first-child {
-  background-color: wheat;
+  background-color: tomato;
   flex-grow: 1;
 }
 
 .box:nth-child(2) {
-  background-color: blue;
+  background-color: orange;
   flex-grow: 1;
 }
 
 .box:last-child {
-  background-color: black;
+  background-color: teal;
   flex-grow: 1;
 }
