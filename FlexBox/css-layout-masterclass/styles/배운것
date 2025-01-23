@@ -4,3 +4,47 @@ flex 항목의 이상적인 크기인
 
 그리고 그 크기에서 상자가 커지거나 줄어들지만
 초기 시작 크기를 설정 가능 하다.
+
+
+flex grow
+0이면 내용안 컨텐츠(텍스트)값의 크기로 설정되고
+0보다 크다면 flex 컨테이너 내부에서 가능한 많은 공간을 차지하게 된다.
+
+flex basis과 flex-shrink:0을
+같이 사용하면 min-width와 같은 효과를 낼 수 있다.
+만약 basis에 500의 값을 주면
+상자는 500이상으로 원하는 만큼 커질 수 있지만
+축소를 시작하면 500미만으로는 작아지지 않기 때문이다.
+
+flex-grow, flex-shrink, flex-basis 3개를 같이 많이 쓰게된다.
+디자인할 때 이런곳에서 많이 쓰게되는데
+예를 들어 로고가 100픽셀 이하로 줄어들지 않게 하는법이 있다.
+
+max-width으로 활용하고 싶을 때
+flex-grow : 0
+flex-shrink : 5
+flex-basis : 500px
+
+grow는 0을 가지고있어 늘어나지는 않고
+shrink는 5를 가지고있어 5의 비율로 축소될 수 있으며,
+기본값은 500pixel을 가지고있기 때문에
+최대크기는 500px를 가지되 5의 비율로 축소될 수 있음을 의미한다.
+
+
+flex
+flex-grow, flex-shrink, flex-basis 3개를 모아놓은 것
+
+ex
+flex-grow : 1
+flex-shrink : 3
+flex-basis : 500px
+
+flex : 1 3 500px
+
+
+flex-basis와 width의 차이?
+flex-basis는 주 축(main axis)을 가진다는데에 차이점이 있다.
+flex-basis는 너비뿐만 아니라 주축도 가진다.
+주축에 따라서 높이로 작용 할 수도 있다.
+만약 flex-direction:column을 적용하면
+flex-basis의 값이 높이로 작용되는걸 알 수 있다.
