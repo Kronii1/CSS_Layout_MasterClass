@@ -9,8 +9,10 @@ grid-template-columns
 grid-template-rows
 그리드 행을 만드는 방식
 
+
 gap
 gap속성은 flex 컨테이너와 grid컨테이너 둘 다 적용 가능
+
 
 행과 열에 다르게 값을 주고 싶다면
 row-gap, column-gap을 사용하면 된다.
