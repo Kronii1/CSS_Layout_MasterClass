@@ -1,18 +1,20 @@
-CSS Grid
-위치하고싶은 자식들 바로 위에 있는 부모 컨테이너를 Grid Container로 지정해야 한다.
+grid 내의 각각 라인에 숫자가 배정되어 있다.
+
+행 번호를 사용하여 그리드 내부에 항목을 배치할 수 있기 때문에 많이 유용하다.
+
+     row
+grid-column-start,end
+열을 원하는 번호에서 시작, 끝을 지정할 수 있게 해준다.
+
+마지막 라인
+어떤 요소가 마지막 줄까지 확장되도록 하고 싶다면 -1로 값을 설정해주면 된다.
+이게 바로 음수의 역할 이다.
 
 
-grid-template-columns
-그리드 열을 만드는 방식
+줄임말
+grid-column-start,end => gird-coulmn
+gird-row-start,ed => gird-row
 
-
-grid-template-rows
-그리드 행을 만드는 방식
-
-
-gap
-gap속성은 flex 컨테이너와 grid컨테이너 둘 다 적용 가능
-
-
-행과 열에 다르게 값을 주고 싶다면
-row-gap, column-gap을 사용하면 된다.
+사용법
+grid-column : 1 / 1
+grid-row : 2 / -1
