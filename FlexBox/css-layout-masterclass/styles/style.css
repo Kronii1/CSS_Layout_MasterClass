@@ -1,0 +1,17 @@
+.father {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  grid-template-rows: 200px 100px;
+  gap: 10px;
+}
+
+.child {
+  background-color: tomato;
+  display: flex;
+  color: white;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 20px;
+}
