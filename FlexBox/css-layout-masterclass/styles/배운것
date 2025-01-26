@@ -1,0 +1,5 @@
+span
+얼마나 많은 행을 사용할지 결정할때 사용한다.
+
+사용법 예시
+grid-column : span 2 or name 3
