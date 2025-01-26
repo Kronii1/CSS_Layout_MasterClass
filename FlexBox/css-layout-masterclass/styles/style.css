@@ -1,7 +1,7 @@
 .father {
   display: grid;
-  grid-template-columns: 100px 200px 100px;
-  grid-template-rows: 200px 100px;
+  grid-template-columns: [potato] 100px [tomato] 200px [clock] 100px [apple];
+  grid-template-rows: [korea] 200px [japan] 100px [thailand];
   gap: 10px;
 }
 
@@ -23,6 +23,7 @@
 
 .child:last-child {
   background-color: teal;
-  grid-column-start: 2;
-  grid-column-end: -1;
+  /* grid-column-start: 2;
+  grid-column-end: -1; */
+  grid-column: tomato / apple;
 }
