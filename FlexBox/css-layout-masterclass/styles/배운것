@@ -1,0 +1,16 @@
+그리드 셀 자치를 정렬하는법을 배운다.
+
+align-content 세로방향,기본값 = start
+셀을 그룹으로 묶어서 세로 방향으로 배치하고 있다.
+
+
+justify-content 가로방향,기본값 = start
+
+두 속성 다 남은 공간이 없으시 정렬되는 느낌이 없다.
+
+
+place-content = justify-content + align-content
+
+self와 content의 차이점
+self는 셀 하나하나를 수동으로 움직이는 속성이고
+content는 셀 하나하나가 아닌 셀전체를 그룹으로 해서 움직이는 속성이다.
