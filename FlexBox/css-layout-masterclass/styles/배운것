@@ -1,2 +1,39 @@
 이번 강의에서는
 SCSS를 이용한 Nesting에 대해서 배워 볼 것이다.
+
+Nesting은
+우리가 중첩된 CSS코드를 사용할 수 있게 해준다.
+
+Nesting은 왜 필요할까?
+코드를 짧게 만들 수 있기 때문이다.
+
+ex
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+li {
+    background-color: tomato;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+==
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  li {
+    background-color: tomato;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+  }
+}
