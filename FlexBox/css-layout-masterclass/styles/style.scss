@@ -5,33 +5,47 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 $breakpoint-xl: 1200px;
 
+@mixin smallDevice {
+  @media screen and (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin mediumDevice {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin largeDevice {
+  @media screen and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin xlDevice {
+  @media screen and (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
 
-@mixin alert($bgColor) {
-  background-color: $bgColor;
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px dashed black;
-  @content;
-}
-
-.success {
-  @include alert(green) {
-    text-decoration: underline;
-    font-size: 10px;
+  @include smallDevice() {
+    background-color: blue;
   }
-}
 
-.error {
-  @include alert(tomato) {
-    text-transform: uppercase;
+  @include mediumDevice() {
+    background-color: red;
   }
-}
 
-.warning {
-  @include alert(yellow);
+  @include largeDevice() {
+    background-color: purple;
+  }
+
+  @include xlDevice() {
+    background-color: pink;
+  }
 }
