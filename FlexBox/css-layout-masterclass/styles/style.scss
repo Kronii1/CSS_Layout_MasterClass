@@ -5,15 +5,22 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-%alert {
+@mixin alert($bgColor) {
+  background-color: $bgColor;
   margin: 10px;
   padding: 10px 20px;
   border-radius: 10px;
   border: 1px dashed black;
 }
 
-.success,
-.error,
+.success {
+  @include alert(green);
+}
+
+.error {
+  @include alert(tomato);
+}
+
 .warning {
-  @extend %alert;
+  @include alert(yellow);
 }

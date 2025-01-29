@@ -1,23 +1,12 @@
-이번 강의에서는 @extend에 대해서 배워볼 것이다.
+@extend는
+일종의 복사-붙여넣기처럼 코드를 공유하고 싶을 때 유용했다.
 
-% => alert라고 부른다
-
-ex
-
-%alert {
-  margin: 10px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 1px dashed black;
-}
-
-.success,
-.error,
-.warning {
-  @extend %alert;
-}
+하지만
+mixin을 사용하면
+코드를 공유하는 동시에 생성까지 가능하다
 
 
-extend는
-지정해놓은 속성,스타일을
-여러곳에 공유하고 싶을 때 사용하는 느낌이다.
+'@mixin' 은 js의 function과 같은 코드 덩어리를 만들고 이 function(@mixin으로 만들어진 코드 덩어리)이 argument(인자)를 받을 수 있게 한다.
+'@include'를 사용하여 argument(인자)를 보내고 function을 불러온다.
+
+이때, 인자는 여러 개가 될 수 있다.
