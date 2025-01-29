@@ -1,12 +1,6 @@
-@extend는
-일종의 복사-붙여넣기처럼 코드를 공유하고 싶을 때 유용했다.
+mixin에서 다른걸 추가하고싶을 경우
+mixin에 @contact 를 추가하고
 
-하지만
-mixin을 사용하면
-코드를 공유하는 동시에 생성까지 가능하다
-
-
-'@mixin' 은 js의 function과 같은 코드 덩어리를 만들고 이 function(@mixin으로 만들어진 코드 덩어리)이 argument(인자)를 받을 수 있게 한다.
-'@include'를 사용하여 argument(인자)를 보내고 function을 불러온다.
-
-이때, 인자는 여러 개가 될 수 있다.
+include alert(){
+  여기에 보낼 속성을 추가해주면 된다.
+}
